@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+    />
+    <title>Frontend Mentor | Four card feature section</title>
+    <style>
+      body {
+        font-family: Poppins, sans-serif;
+        background-color: hsl(0, 0%, 98%);
+      }
+      main {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 30px;
+        max-width: 1140px;
+      }
+      .title {
+        font-weight: 200;
+        font-size: 26px;
+        color: hsl(234, 12%, 34%);
+      }
+      .powby {
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: hsl(234, 12%, 34%);
+      }
+      .desc {
+        font-weight: 300;
+        color: hsl(229, 6%, 66%);
+        font-size: 13px;
+        margin-bottom: 40px;
+      }
+      header {
+        max-width: 500px;
+        text-align: center;
+      }
+      .vertical {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+      .cards {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background: white;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 8px 8px #ccc;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: inline-block;
+        max-width: 300px;
+      }
+      .card img {
+        margin-left: auto;
+        display: block;
+        margin-top: 10px;
+      }
+      .card .card-tit {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .card .card-desc {
+        font-weight: 400;
+        font-size: 14px;
+        color: hsl(229, 6%, 66%);
+      }
+      .supervisor {
+        border-top: 4px solid hsl(180, 62%, 55%);
+      }
+      .team-builder {
+        border-top: 4px solid hsl(0, 78%, 62%);
+      }
+      .karma {
+        border-top: 4px solid hsl(34, 97%, 64%);
+      }
+      .calculator {
+        border-top: 4px solid hsl(212, 86%, 64%);
+      }
+      @media (max-width: 1050px) {
+        .cards {
+          flex-flow: column nowrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="title">Reliable, efficient delivery</div>
+        <div class="powby">Powered by Technology</div>
+
+        <div class="desc">
+          Our Artificial Intelligence powered tools use millions of project data points to ensure that your
+          project is successful
+        </div>
+      </header>
+
+      <div class="cards">
+        <div class="card supervisor">
+          <div class="card-tit">Supervisor</div>
+          <div class="card-desc">Monitors activity to identify project roadblocks</div>
+          <img src="images/icon-supervisor.svg" />
+        </div>
+
+        <div class="vertical">
+          <div class="card team-builder">
+            <div class="card-tit">Team Builder</div>
+            <div class="card-desc">Scans our talent network to create the optimal team for your project</div>
+            <img src="images/icon-team-builder.svg" />
+          </div>
+
+          <div class="card karma">
+            <div class="card-tit">Karma</div>
+            <div class="card-desc">Regularly evaluates our talent to ensure quality</div>
+            <img src="images/icon-karma.svg" />
+          </div>
+        </div>
+
+        <div class="card calculator">
+          <div class="card-tit">Calculator</div>
+          <div class="card-desc">Uses data from past projects to provide better delivery estimates</div>
+          <img src="images/icon-calculator.svg" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
